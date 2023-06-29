@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="basicfunction()" >
+    <div>
+        <div class="top">
+            <h1>Balance Sheet Calculator</h1>
+        </div>
+        <div class="top_flex_div">
+            <div class="side_div_1">
+                <div>
+                    <h3>Assets</h3>
+                    <br>
+                    <h5>Current Assets:</h5>
+                    <br>
+                    <p class="items_side_1">Petty Cash</p>
+                    <p class="items_side_1">Cash in bank</p>
+                    <p class="items_side_1">Accounts Receivable</p>
+                    <p class="items_side_1">Inventory</p>
+                    <p class="items_side_1">Deposits Paid</p>
+                    <p class="items_side_1">Prepaid Expenses</p>
+                    <p class="items_side_1">Others</p>
+                    <p>Total Current Assets: </p><p class="total_current_assets">0</p>
+                    <br>
+                    <h5>Fixed Assets:</h5>
+                    <br>
+                    <p class="items_side_1_2">Buildings and Lands</p>
+                    <p class="items_side_1_2">Plant and Equipment</p>
+                    <p class="items_side_1_2">Furnitures and Fixtures</p>
+                    <p class="items_side_1_2">Other</p>
+                    <p>Total Fixed Assets: </p><p class="total_fixed_assets">0</p>
+                    <br>
+                    <br>
+                    <p class="total_assets">Total Assets: </p><p class="total_assets_ans">0</p>
+                </div>
+                <div class="assets_inp"><br><br><br><br>
+                    <input type="number" name="" id="" class="assets current_assets"><br>
+                    <input type="number" name="" id="" class="assets current_assets"><br>
+                    <input type="number" name="" id="" class="assets current_assets"><br>
+                    <input type="number" name="" id="" class="assets current_assets inventory"><br>
+                    <input type="number" name="" id="" class="assets current_assets"><br>
+                    <input type="number" name="" id="" class="assets current_assets"><br>
+                    <input type="number" name="" id="" class="assets current_assets">
+                    <br><br><br><br>
+                    <div class="assets_2_inp">
+                        <input type="number" name="" id="" class="assets fixed_assets"><br>
+                        <input type="number" name="" id="" class="assets fixed_assets"><br>
+                        <input type="number" name="" id="" class="assets fixed_assets"><br>
+                        <input type="number" name="" id="" class="assets fixed_assets"><br>
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+            <div class="side_div_2">
+                <div>
+                    <h3>Liablities</h3>
+                    <br>
+                    <h5>Current Liablities:</h5>
+                    <br>
+                    <p class="items_side_2">Accounts Payable</p>
+                    <p class="items_side_2">Salaries Payable</p>
+                    <p class="items_side_2">Taxes payable</p>
+                    <p class="items_side_2">Accured Liablities</p>
+                    <p class="items_side_2">Long time debt</p>
+                    <p class="items_side_2">Others</p>
+                    <p>Total Current Liablities: </p><p class="total_current_liablities">0</p>
+                    <br><br><br>
+                    <h5>Fixed Liablities:</h5>
+                    <br>
+                    <p class="items_side_2_2">Debentures</p>
+                    <p class="items_side_2_2">Long time loan</p>
+                    <p class="items_side_2_2">Net Profit</p>
+                    <p class="items_side_2_2">Capital</p>
+                    <p class="items_side_2_2">Others</p>
+                    <p>Total Fixed Liablities: </p><p class="total_fixed_liablities">0</p><br>
+                    <p class="total_liablities">Total Liablities: </p><p class="total_liablities_ans">0</p>
+                </div>
+                <div class="liablities_inp">
+                    <br><br><br><br>
+                    <input type="number" class="liablities current_liablities" name="" id=""><br>
+                    <input type="number" class="liablities current_liablities" name="" id=""><br>
+                    <input type="number" class="liablities current_liablities" name="" id=""><br>
+                    <input type="number" class="liablities current_liablities" name="" id=""><br>
+                    <input type="number" class="liablities current_liablities" name="" id=""><br>
+                    <input type="number" class="liablities current_liablities" name="" id="">
+                    <br><br><br><br><br><br>
+                    <div class="liablities_2_inp">
+                        <input type="number" class="liablities fixed_liablities" name="" id=""><br>
+                        <input type="number" class="liablities fixed_liablities" name="" id=""><br>
+                        <input type="number" class="liablities fixed_liablities" name="" id=""><br>
+                        <input type="number" class="liablities fixed_liablities" name="" id=""><br>
+                        <input type="number" class="liablities fixed_liablities" name="" id=""><br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="hidden" style="display:none ;">
+            <p class="w_c"></p>
+            <p class="c_r"></p>
+            <p class="q_a"></p>
+            <p class="a_t"></p>
+        </div>
+        <div class="calculte">
+            <button id="calculate_btn">Calculate</button>
+        </div>
+        <div>
+            <button class="pdf_maker" onclick="pdf_maker()">Download Reciept</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
